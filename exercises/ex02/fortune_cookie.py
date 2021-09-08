@@ -22,4 +22,4 @@ else:
         else:
             if random_integer == Option_4:
                 print("A new hobby will bring you joy this month.")
-print("Now go spread positive vibes!")
+print("Now, go spread positive vibes!")
