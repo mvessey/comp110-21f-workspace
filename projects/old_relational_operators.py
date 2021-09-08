@@ -1,0 +1,20 @@
+"""Relational Operators Practice, using boolean!""" 
+
+__author__: str = ("730409403")
+left_hand_side: str = input("Left hand side: ")
+usable_left_hand = int(left_hand_side)
+right_hand_side: str = input("Right hand side: ")
+usable_right_hand = int(right_hand_side)
+less_than = bool(usable_left_hand < usable_right_hand)
+usable_less_than = str(less_than)
+greater_than_equal = bool(usable_left_hand >= usable_right_hand)
+usable_greater_than_equal = str(greater_than_equal)
+_equal_ = bool(usable_left_hand == usable_right_hand)
+usable_equal = str(_equal_)
+not_equal = bool(usable_left_hand != usable_right_hand)
+usable_not_equal = str(not_equal)
+
+print(left_hand_side + " < " + right_hand_side + " is " + usable_less_than)
+print(left_hand_side + " >= " + right_hand_side + " is " + usable_greater_than_equal)
+print(left_hand_side + " == " + right_hand_side + " is " + usable_equal)
+print(left_hand_side + " != " + right_hand_side + " is " + usable_not_equal)

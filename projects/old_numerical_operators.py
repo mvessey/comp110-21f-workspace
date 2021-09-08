@@ -1,0 +1,20 @@
+"""Practicing with Numeric Operators, str to int to str!"""
+
+__author__: str = ("730409403")
+left_hand_side: str = input("Left-hand side: ")
+usable_left_side = int(left_hand_side)
+right_hand_side: str = input("Right-hand side: ")
+usable_right_side = int(right_hand_side)
+_exponential_ = int(usable_left_side ** usable_right_side)
+usable_exponential = str(_exponential_)
+full_division = float(usable_left_side / usable_right_side)
+usable_full_division = str(full_division)
+_division_ = int(usable_left_side // usable_right_side)
+usable_division = str(_division_)
+division_remainder = int(usable_left_side % usable_right_side)
+usable_division_remainder = str(division_remainder)
+
+print(left_hand_side + " ** " + right_hand_side + " is " + usable_exponential)
+print(left_hand_side + " / " + right_hand_side + " is " + usable_full_division)
+print(left_hand_side + " // " + right_hand_side + " is " + usable_division)
+print(left_hand_side + " % " + right_hand_side + " is " + usable_division_remainder)

@@ -1,15 +1,25 @@
 """Program that outputs one of at least four random, good fortunes."""
 
-__author__ = "ENTER YOUR 9-DIGIT PID HERE"
+__author__ = "730409403"
 
-# The randint function is imported from the random library so that
-# you are able to generate integers at random.
-# 
-# Documentation: https://docs.python.org/3/library/random.html#random.randint
-#
-# For example, consider the function call expression: randint(1, 100)
-# It will evaluate to an int value >= 1 and <= 100. 
 from random import randint
 
+Option_1: int = 1
+Option_2: int = 2
+Option_3: int = 3
+Option_4: int = 4
+random_integer: int = int(randint(1, 4))
 
-# Begin your solution here...
+print("Your fortune cookie says...")
+if random_integer == Option_1:
+    print("You will live a long a prosperous life.")
+else: 
+    if random_integer == Option_2:
+        print("You will meet a new friend in the next week.")
+    else:
+        if random_integer == Option_3:
+            print("You will soon find something you have lost.")
+        else:
+            if random_integer == Option_4:
+                print("A new hobby will bring you joy this month.")
+print("Now go spread positive vibes!")
