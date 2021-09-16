@@ -15,4 +15,4 @@ while i < len(word):
         cycle = cycle + 1
     i = i + 1
 
-print("Found Duplicate: " + str(duplicate))
+print("Found duplicate: " + str(duplicate))
