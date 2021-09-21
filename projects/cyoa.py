@@ -1,4 +1,4 @@
-"""Choose your own adventure!!"""
+"""Choose your adventure: A Paranormal Ghost Game."""
 
 __author__ = "730409403"
 
@@ -20,8 +20,9 @@ def greet() -> None:
 
 
 def main() -> None: 
-    """Welcome to the Game: Wishes"""
+    """Welcome to the Game: Wishes."""
     global points
+    greet()
     wishes: str = input("Do you wish to continue? (yes/no/instructions) ")
     if wishes == "no":
         goodbye()
@@ -32,6 +33,7 @@ def main() -> None:
 
 
 def instructions() -> None:
+    """Intruction explanation section."""
     print("Instructions: ")
     print("This is a game in which you the player will be interacting with ghosts through a spirit board. To ask questions, simply select the letter ex (a) with the corresponding question you wish to ask. However, be careful about what questions you ask. The ghost may react negatively.")
     print("")
@@ -42,6 +44,7 @@ def instructions() -> None:
 
 
 def goodbye() -> None:
+    """Message for ending game."""
     print("Maybe you have a skeptical mind, maybe you have skitish demeanor. Regardless of which, perhaps it is best that do not speak with the dead. Who knows how dangerous it could be. ")
     print(" ")
     print("Thank you for playing, " + player + "!")
@@ -49,6 +52,7 @@ def goodbye() -> None:
 
 
 def game(points: int) -> None:
+    """Beginning the Game."""
     print("You are an amature ghost researcher hoping to gather evidence to prove the existance of paranormal activity for your senior year research project. You have collected little to no evidence, and this is mostly a last resort. However, hoping to gather even the slightest bit of evidence, you have found youself sitting in front of an ouji board in a supposedly haunted hotel, ready to begin your final investigation. What question do you want to ask first?")
     print("(a) Is anyone there?")
     print("(b) Come out, come out wherever you are.")
@@ -83,16 +87,16 @@ def game(points: int) -> None:
                 print("(b) What is this?")
                 print("(c) How did you get here?")
                 print("(d) How did you die?")
-                question_2: str = input("How do you respond? ")
-                if question_2 == "a":
+                question_2b: str = input("How do you respond? ")
+                if question_2b == "a":
                     print("The board writes out 'A GIRL'")
                     points == points + 2
                 else:
-                    if question_2 == "b":
+                    if question_2b == "b":
                         print("The board writes out, 'WHAT DO YOU MEAN?'.")
                         points == points + 4
                     else:
-                        if question_2 == "c":
+                        if question_2b == "c":
                             print("The board writes out, 'WHY WOULD I TELL YOU?'.")
                             points == points + 3
                         else:
@@ -106,8 +110,8 @@ def game(points: int) -> None:
         else:
             print("You put the board away, and manage to leave the hotel with many questions answered.")
     if points >= 13:
-        question_3: str = input("No matter how many questions you ask the ghost will no longer respond. Do you wish to risk one last time? (yes/no) ")
-        if question_3 == "yes":
+        question_3b: str = input("No matter how many questions you ask the ghost will no longer respond. Do you wish to risk one last time? (yes/no) ")
+        if question_3b == "yes":
             print("You move to ask a final question and suddenly the lights go out in the room and you see the form of the being you have been talking to, looking quite angry.")
             print(angry_ghost)
             print(death)
@@ -116,6 +120,5 @@ def game(points: int) -> None:
     print("Action points earned: " + str(points))
 
 
-greet()
 if __name__ == "__main__":
     main()
