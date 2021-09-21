@@ -1,6 +1,6 @@
 """Finding duplicate letters in a word."""
 
-__author__ = "123456789"
+__author__ = "730409403"
 
 word: str = str(input("Enter a word: "))
 i: int = 0

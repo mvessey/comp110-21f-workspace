@@ -1,6 +1,6 @@
 """Drawing forests in a loop."""
 
-__author__ = "123456789"
+__author__ = "730409403"
 
 TREE: str = '\U0001F332'
 number: int = int(input("Depth: "))
