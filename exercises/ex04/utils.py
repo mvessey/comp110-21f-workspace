@@ -25,10 +25,12 @@ def is_equal(list1: list[int], list2: list[int]) -> bool:
         return False
 
 
+# if len(list_numbers) == 0:
+        # raise ValueError("max() arg is an empty List")
+
+
 def max(list_numbers: list[int]) -> int:
     """Find the maximum of the list."""
-    if len(list_numbers) == 0:
-        raise ValueError("max() arg is an empty List")
     if list_numbers[0] > list_numbers[1] and list_numbers[0] > list_numbers[2]:
         return list_numbers[0]
     if list_numbers[1] > list_numbers[0] and list_numbers[1] > list_numbers[2]:
