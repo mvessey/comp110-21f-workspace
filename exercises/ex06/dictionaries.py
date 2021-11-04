@@ -4,6 +4,7 @@ __author__ = "730409403"
 
 
 def invert(norm_dict: dict[str, str]) -> dict[str, str]:
+    """Def to invert a dictionary."""
     inverted_dict = {}
     for key, value in norm_dict.items():
         if value in inverted_dict.keys():
@@ -15,6 +16,7 @@ def invert(norm_dict: dict[str, str]) -> dict[str, str]:
 
 
 def favorite_color(colors: dict[str, str]) -> str:
+    """Def to determine most liked color among people."""
     the_favorite_color = {}
     for key, value in colors.items():
         the_favorite_color.setdefault(value, set()).add(key)
@@ -23,6 +25,7 @@ def favorite_color(colors: dict[str, str]) -> str:
 
 
 def count(list_values: list[str]) -> dict[str, int]:
+    """Def to count the amount of times eachstring occurs in a list."""
     initial_dictionary = {}
     for item in list_values:
         if (item in initial_dictionary):
